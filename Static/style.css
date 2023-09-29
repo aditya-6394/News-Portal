@@ -244,18 +244,6 @@ section article .article-description {
     margin: 0.4em 0;
     padding: 0.5em 0;
   }
-  main article .article-title h1 {
-    font-size: 2.5rem;
-  }
-  p {
-    font-size: 1.2rem;
-  }
-  h3 {
-    font-size: 2rem;
-  }
-  h5 {
-    font-size: 1.4rem;
-  }
 }
 
 /* ------------------------------------FOR PHONES------------------------------ */
@@ -265,18 +253,7 @@ section article .article-description {
     flex-direction: column;
     row-gap: 2rem;
   }
-  h1 {
-    font-size: 1.3rem;
-  }
-  p {
-    font-size: 1.3rem;
-  }
-  h3 {
-    font-size: 2.4rem;
-  }
-  h5 {
-    font-size: 1.7rem;
-  }
+
   main article {
     display: flex;
     flex-direction: column;
