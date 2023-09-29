@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News Portal</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./Static/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +16,7 @@
     <div class="container">
       <header>
         <div class="header-logo">
-          <img src="news_html_css/news/assets/images/logo.svg" alt="" />
+          <img src="./Static/Images/logo.svg" alt="" />
         </div>
         <div class="nav">
           <p>Home</p>
@@ -25,6 +25,14 @@
           <p>Trending</p>
           <p>Categories</p>
         </div>
+        <div class="mobile-nav-btn">
+          <div class="btn-open">
+            <img src="./Static/Images/icon-menu.svg" alt="" />
+          </div>
+          <div class="btn-close">
+            <img src="./Static/Images/icon-menu-close.svg" alt="" />
+          </div>
+        </div>
       </header>
       <main>
         <div class="left">
@@ -32,16 +40,14 @@
             <picture>
               <source
                 media="(max-width: 440px)"
-                srcset="news_html_css/news/assets/images/image-web-3-mobile.jpg"
+                srcset="./Static/Images/image-web-3-mobile.jpg"
               />
               <source
                 media="(min-width: 441px)"
-                srcset="
-                  news_html_css/news/assets/images/image-web-3-desktop.jpg
-                "
+                srcset="./Static/Images/image-web-3-desktop.jpg"
               />
               <img
-                src="news_html_css/news/assets/images/image-web-3-desktop.jpg"
+                src="./Static/Images/image-web-3-desktop.jpg"
                 alt="Description of the image"
               />
             </picture>
@@ -83,10 +89,7 @@
       <footer>
         <article>
           <div class="article-logo">
-            <img
-              src="news_html_css/news/assets/images/image-retro-pcs.jpg"
-              alt=""
-            />
+            <img src="./Static/Images/image-retro-pcs.jpg" alt="" />
           </div>
           <div class="article-description">
             <p class="number">01</p>
@@ -98,10 +101,7 @@
         </article>
         <article>
           <div class="article-logo">
-            <img
-              src="news_html_css/news/assets/images/image-top-laptops.jpg"
-              alt=""
-            />
+            <img src="./Static/Images/image-top-laptops.jpg" alt="" />
           </div>
           <div class="article-description">
             <p class="number">02</p>
@@ -111,10 +111,7 @@
         </article>
         <article>
           <div class="article-logo">
-            <img
-              src="news_html_css/news/assets/images/image-gaming-growth.jpg"
-              alt=""
-            />
+            <img src="./Static/Images/image-gaming-growth.jpg" alt="" />
           </div>
           <div class="article-description">
             <p class="number">03</p>
