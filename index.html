@@ -18,13 +18,13 @@
         <div class="header-logo">
           <img src="./Static/Images/logo.svg" alt="" />
         </div>
-        <div class="nav">
-          <p>Home</p>
-          <p>New</p>
-          <p>Popular</p>
-          <p>Trending</p>
-          <p>Categories</p>
-        </div>
+        <nav>
+          <p><a href="#">Home</a></p>
+          <p><a href="#">New</a></p>
+          <p><a href="#">Popular</a></p>
+          <p><a href="#">Trending</a></p>
+          <p><a href="#">Categories</a></p>
+        </nav>
         <div class="mobile-nav-btn">
           <div class="btn-open">
             <img src="./Static/Images/icon-menu.svg" alt="" />
@@ -35,39 +35,38 @@
         </div>
       </header>
       <main>
-        <div class="left">
-          <div class="top">
-            <picture>
-              <source
-                media="(max-width: 440px)"
-                srcset="./Static/Images/image-web-3-mobile.jpg"
-              />
-              <source
-                media="(min-width: 441px)"
-                srcset="./Static/Images/image-web-3-desktop.jpg"
-              />
-              <img
-                src="./Static/Images/image-web-3-desktop.jpg"
-                alt="Description of the image"
-              />
-            </picture>
+        <article>
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="./Static/Images/image-web-3-mobile.jpg"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcset="./Static/Images/image-web-3-desktop.jpg"
+            />
+            <img
+              src="./Static/Images/image-web-3-desktop.jpg"
+              alt="Description of the image"
+            />
+          </picture>
+
+          <div class="article-title">
+            <h1>The Bright Fututre of Web 3.0?</h1>
           </div>
-          <div class="bottom">
-            <div class="main-bottom-left">
-              <h1>The Bright Fututre of Web 3.0?</h1>
-            </div>
-            <div class="main-bottom-right">
-              <p>
-                We dive into the next evolution of web thqt claims to put the
-                power of the platforms back into the hands of the people. But is
-                it really fulfilling it's promise
-              </p>
-              <button>READ MORE</button>
-            </div>
+          <div class="article-description">
+            <p>
+              We dive into the next evolution of web thqt claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling it's promise
+            </p>
+            <button>READ MORE</button>
           </div>
-        </div>
-        <div class="right">
-          <div class="aside">
+        </article>
+
+        <!-- --------------------- -->
+        <aside>
+          <div class="headlines">
             <h3>New</h3>
             <h5>Hydrogen VS Electric Cars</h5>
             <p>Will hydrogen-fueled cars ever catch up to EV's?</p>
@@ -84,9 +83,10 @@
               what that means.
             </p>
           </div>
-        </div>
+        </aside>
       </main>
-      <footer>
+
+      <section>
         <article>
           <div class="article-logo">
             <img src="./Static/Images/image-retro-pcs.jpg" alt="" />
@@ -121,7 +121,7 @@
             </p>
           </div>
         </article>
-      </footer>
+      </section>
     </div>
   </body>
 </html>

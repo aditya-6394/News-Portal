@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  /* border: 1px solid blue; */
 }
 
 :root {
@@ -16,125 +16,147 @@
   --Very-dark-blue: hsl(240, 100%, 5%);
 }
 p {
-  font-size: 15px;
+  font-size: 0.888rem;
   color: var(--Dark-grayish-blue);
 }
 .container {
   width: 75vw;
-  margin: 3em auto;
+  margin: 1.5em auto;
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
   font-family: "Inter", sans-serif;
   justify-content: center;
 }
+
+/* ===============================Header & Nav CSS============================ */
 header {
   display: flex;
   align-items: center;
 }
 .header-logo {
-  flex-basis: 50%;
+  flex-basis: 55%;
 }
 
-.nav {
+nav {
   flex-grow: 1;
   text-align: end;
   display: flex;
   justify-content: space-between;
 }
-.nav p {
+nav p {
   display: inline-block;
+}
+nav p :hover {
+  color: var(--Soft-red);
+  font-weight: 700;
+}
+nav p a {
+  text-decoration: none;
+  color: var(--Dark-grayish-blue);
 }
 .mobile-nav-btn {
   display: none;
-  /* display: flex;
-  align-items: center; */
 }
 .btn-open,
 .btn-close {
   display: inline-block;
 }
+
+/* ====================================Main CSS================================ */
 main {
   display: flex;
-  flex-direction: row;
   column-gap: 1rem;
 }
-main .left {
+main article {
   flex-basis: 67.2%;
   display: flex;
-  flex-direction: column;
   row-gap: 1rem;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-main .left .top {
+main article picture {
+  flex-basis: 100%;
   text-align: center;
 }
-main .left .top picture {
-  height: 90%;
-  width: 90%;
-  margin: 0 auto;
-}
-main .left .top img {
+
+main article picture img {
   height: 100%;
   width: 100%;
 }
-main .left .bottom {
-  display: flex;
-  align-items: flex-start;
-  column-gap: 1rem;
-}
-.main-bottom-left {
+
+main article .article-title {
   flex-basis: 50%;
 }
-.main-bottom-left h1 {
+main article .article-title h1 {
   font-weight: 800;
+  font-size: 2rem;
 }
-.main-bottom-right {
+main article .article-description {
   flex-basis: 50%;
+  padding-left: 0.9rem;
 }
-.main-bottom-right button {
+main article .article-description button {
   margin-top: 1rem;
+  width: 8rem;
   letter-spacing: 2px;
-  padding: 5px;
+  padding: 7px 6px;
   background-color: var(--Soft-red);
   border: none;
   color: var(--Off-white);
 }
-main .right {
+main article .article-description button:hover {
+  background-color: var(--Very-dark-blue);
+  color: var(--Off-white);
+  font-weight: 700;
+}
+main aside {
   flex-basis: 32.8%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--Very-dark-blue);
+  box-shadow: 2px 2px 4px 3px lightgray;
 }
 
-.right .aside {
-  height: 95%;
+aside .headlines {
+  height: 97%;
   width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.aside h3 {
+.headlines h3 {
+  font-size: 1.7rem;
   color: var(--Soft-orange);
 }
-.aside h5 {
+.headlines h5 {
   color: var(--Off-white);
 }
-.aside p {
+.headlines h5:hover {
+  color: var(--Soft-orange);
+  font-weight: 800;
+}
+.headlines p {
   color: var(--Grayish-blue);
 }
-footer {
+
+/* ===================================SECTION CSS=============================== */
+section {
   display: flex;
   column-gap: 2%;
 }
-footer article {
+section article {
   flex-basis: 33.33%;
   display: flex;
   column-gap: 0.6em;
 }
+section article:hover {
+  position: relative;
+  top: 0.3rem;
+  left: 0.3rem;
+}
 
-footer article .article-logo {
+section article .article-logo {
   flex-basis: 35%;
   display: flex;
   align-items: center;
@@ -144,7 +166,7 @@ footer article .article-logo {
   width: 100%;
   height: 100%;
 }
-footer article .article-description {
+section article .article-description {
   flex-basis: 65%;
   display: flex;
   flex-direction: column;
@@ -161,6 +183,10 @@ footer article .article-description {
   color: var(--Very-dark-blue);
   font-weight: 700;
 }
+.article-description .topic:hover {
+  color: var(--Soft-orange);
+  font-weight: 800;
+}
 
 .article-description .content {
   color: var(--Dark-grayish-blue);
@@ -168,41 +194,30 @@ footer article .article-description {
 
 /* ===================================RESPONSIVE=================================== */
 
-@media screen and (width<=900px) {
+/* -----------------------------------FOR TABLETS---------------------------------- */
+@media screen and (768px<= width <=992px) {
   .container {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: 2rem;
+    font-size: 120%;
   }
   main {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: 2rem;
+    column-gap: 1.5rem;
   }
-  main .left {
+  section {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: 2em;
   }
-  .bottom {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
+  section article .article-description {
+    justify-content: center;
   }
-  footer {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-  }
-
-  /* For responvise nav */
-  .nav {
-    /* flex-direction: column;
-    align-items: center;
-    text-align: center;*/
+  nav {
     display: none;
-    /* height: 100vh; */
-    /* width: 60vh; */
   }
   header {
     display: flex;
@@ -223,7 +238,82 @@ footer article .article-description {
     display: inline-block;
   }
 
-  .nav p {
-    margin: 5px;
+  .headlines h3,
+  h5,
+  p {
+    margin: 0.4em 0;
+    padding: 0.5em 0;
+  }
+  main article .article-title h1 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+  h5 {
+    font-size: 1.7rem;
+  }
+}
+
+/* ------------------------------------FOR PHONES------------------------------ */
+@media screen and (width <=768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  h1 {
+    font-size: 3.4rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+  h5 {
+    font-size: 1.7rem;
+  }
+  main article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  nav {
+    display: none;
+  }
+  header {
+    display: flex;
+  }
+  .header-logo {
+    flex-basis: 50%;
+  }
+  .mobile-nav-btn {
+    display: inline-block;
+    text-align: end;
+    flex-grow: 1;
+    z-index: 999;
+  }
+  .btn-close {
+    display: none;
+  }
+  .btn-open {
+    display: inline-block;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+  }
+
+  .headlines h3,
+  h5,
+  p {
+    margin: 0.4em 0;
+    padding: 0.5em 0;
   }
 }
