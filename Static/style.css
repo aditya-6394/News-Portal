@@ -20,7 +20,7 @@ p {
   color: var(--Dark-grayish-blue);
 }
 .container {
-  width: 75vw;
+  width: 85vw;
   margin: 1.5em auto;
   display: flex;
   flex-direction: column;
