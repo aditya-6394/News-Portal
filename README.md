@@ -18,7 +18,8 @@ Welcome to the News Portal home page! This responsive website has been designed 
 
 ## Screenshots
 
-![Design](Static/Images/news-desktop-design.jpeg)
+![desktop-design](https://github.com/aditya-6394/News-Portal/assets/134168404/c97dc2fb-8239-4e4c-86e5-e4e2e3f62b74)
+
 
 ## Getting Started
 
